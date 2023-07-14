@@ -1,7 +1,7 @@
 import { css } from "../../../../styled-system/css";
 
 export const button = css({
-  backgroundColor: "rose.800",
+  backgroundColor: "highlight.primary",
   borderRadius: "full",
   fontSize: "md",
   paddingX: "1",
@@ -11,6 +11,6 @@ export const button = css({
   minWidth: "20",
   boxShadow: "md",
   _hover: {
-    backgroundColor: "rose.900",
+    backgroundColor: "highlight.secondary",
   },
 });
