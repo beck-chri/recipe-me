@@ -19,7 +19,12 @@ export const theme: Theme = {
         value: { _lightTheme: "#FFFFFF", _darkTheme: "#000000" },
       },
       text: {
-        value: { _lightTheme: "#000000", _darkTheme: "#FFFFFF" },
+        onBackground: {
+          value: { _lightTheme: "#000000", _darkTheme: "#FFFFFF" },
+        },
+        onPrimary: {
+          value: "#ffffff",
+        },
       },
     },
     fonts: {
