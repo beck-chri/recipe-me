@@ -1,21 +1,25 @@
 import "./global.css";
 import type { Metadata } from "next";
 import { ReactNode } from "react";
-import { raleway } from "@/app/styles/fonts";
+import { styled } from "../../_styled-system/jsx";
+import { heebo, raleway } from "@/app/styles/fonts";
 import { DesktopNavigation } from "@/app/components/MainNavigation/DesktopNavigation/DesktopNavigation";
 import { MobileNavigation } from "@/app/components/MainNavigation/MobileNavigation/MobileNavigation";
-import { styled } from "../../_styled-system/jsx";
 
 export const metadata: Metadata = {
   title: "RecipeMe",
   description: "Deine rasante Rezeptsammlung",
 };
 
-const Body = styled("body", {
+const Content = styled("div", {
+  // paddings for nav bars
   base: {
-    minHeight: "100vh",
-    display: "flex",
-    flexDirection: "column",
+    paddingTop: "4rem",
+    paddingBottom: "0",
+    mdDown: {
+      paddingTop: "0",
+      paddingBottom: "4rem",
+    },
   },
 });
 
@@ -31,11 +35,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="de">
       {/* make fonts available via next/font */}
-      <Body className={`${raleway.className}`}>
+      <body className={`${raleway.className} ${heebo.className}`}>
         <DesktopNavigation />
-        {children}
+        <Content> {children}</Content>
         <MobileNavigation />
-      </Body>
+      </body>
     </html>
   );
 }

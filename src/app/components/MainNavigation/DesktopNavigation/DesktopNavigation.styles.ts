@@ -6,9 +6,13 @@ export const Wrapper = styled("div", {
     display: "flex",
     color: "text.onPrimary",
     justifyContent: "space-between",
-    padding: "1rem",
+    paddingX: "1rem",
     alignItems: "center",
     hideBelow: "sm",
+    position: "fixed",
+    width: "100%",
+    height: "4rem",
+    boxShadow: "0px 0px 5px 2px rgb(0 0 0 / 10%)",
   },
 });
 

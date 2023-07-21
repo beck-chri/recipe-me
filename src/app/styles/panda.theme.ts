@@ -16,7 +16,8 @@ export const theme: Theme = {
         },
       },
       background: {
-        value: { _lightTheme: "#FFFFFF", _darkTheme: "#000000" },
+        // value: { _lightTheme: "#FFFFFF", _darkTheme: "#000000" }, todo fix
+        value: "#FFFFFF",
       },
       text: {
         onBackground: {
@@ -29,6 +30,7 @@ export const theme: Theme = {
     },
     fonts: {
       raleway: { value: "var(--next-font-raleway)" },
+      heebo: { value: "var(--next-font-heebo)" },
     },
   },
 };

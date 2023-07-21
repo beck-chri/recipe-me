@@ -9,17 +9,17 @@ type Props = {
 export const MobileNavigationItem = ({ config }: Props) => {
   return (
     <li>
-      <VStack gap={"5px"}>
-        <Image
-          src={`/icons/${config.iconFilename}`}
-          width={20}
-          height={20}
-          alt={config.displayName}
-        />
-        <styled.a fontSize={"sm"} href={config.href}>
+      <styled.a fontSize={"sm"} fontFamily={"heebo"} href={config.href}>
+        <VStack gap={"1px"}>
+          <Image
+            src={`/icons/${config.iconFilename}`}
+            width={20}
+            height={20}
+            alt={config.displayName}
+          />
           {config.displayName}
-        </styled.a>
-      </VStack>
+        </VStack>
+      </styled.a>
     </li>
   );
 };
