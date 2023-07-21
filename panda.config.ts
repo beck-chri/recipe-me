@@ -27,8 +27,5 @@ export default defineConfig({
   // The output directory for your css system
   outdir: "_styled-system",
 
-  // Decides which syntax to use: 'object-literal' | 'template-literal'
-  syntax: "object-literal",
-
   jsxFramework: "react",
 });

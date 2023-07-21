@@ -1,13 +1,23 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { MainNavigation } from "@/app/components/MainNavigation/MainNavigation";
 import { ReactNode } from "react";
 import { raleway } from "@/app/styles/fonts";
+import { DesktopNavigation } from "@/app/components/MainNavigation/DesktopNavigation/DesktopNavigation";
+import { MobileNavigation } from "@/app/components/MainNavigation/MobileNavigation/MobileNavigation";
+import { styled } from "../../_styled-system/jsx";
 
 export const metadata: Metadata = {
   title: "RecipeMe",
   description: "Deine rasante Rezeptsammlung",
 };
+
+const Body = styled("body", {
+  base: {
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  },
+});
 
 /**
  * A layout is UI that is shared between routes. This one is the root layout.
@@ -21,10 +31,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="de">
       {/* make fonts available via next/font */}
-      <body className={`${raleway.className}`}>
-        <MainNavigation />
+      <Body className={`${raleway.className}`}>
+        <DesktopNavigation />
         {children}
-      </body>
+        <MobileNavigation />
+      </Body>
     </html>
   );
 }
