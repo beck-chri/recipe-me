@@ -1,5 +1,5 @@
 import { defineConfig } from "@pandacss/dev";
-import { theme } from "./panda.theme";
+import { theme } from "@/app/styles/panda.theme";
 
 export default defineConfig({
   // Whether to use css reset

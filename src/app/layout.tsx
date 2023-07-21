@@ -1,18 +1,13 @@
 import "./global.css";
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
 import { MainNavigation } from "@/app/components/MainNavigation/MainNavigation";
+import { ReactNode } from "react";
+import { raleway } from "@/app/styles/fonts";
 
 export const metadata: Metadata = {
   title: "RecipeMe",
   description: "Deine rasante Rezeptsammlung",
 };
-
-// todo doesnt work
-const raleway = Raleway({
-  subsets: ["latin"],
-  fallback: ["Roboto", "sans-serif"],
-});
 
 /**
  * A layout is UI that is shared between routes. This one is the root layout.
@@ -22,14 +17,11 @@ const raleway = Raleway({
  *
  * @param children will be populated with the route segments the layout is wrapping: e.g. Page Content
  */
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="de">
-      <body className={raleway.className}>
+      {/* make fonts available via next/font */}
+      <body className={`${raleway.className}`}>
         <MainNavigation />
         {children}
       </body>

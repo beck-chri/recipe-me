@@ -6,6 +6,7 @@ export const mainNavigation = css({
   color: "text.onPrimary",
   justifyContent: "space-between",
   padding: "1rem",
+  alignItems: "center",
 });
 
 export const LinkList = css({
@@ -14,5 +15,8 @@ export const LinkList = css({
 });
 
 export const logo = css({
-  fontFamily: "Raleway", // todo doesnt work
+  fontFamily: "raleway",
+  fontWeight: "800",
+  color: "text.onPrimary",
+  fontSize: "xl",
 });

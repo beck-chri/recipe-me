@@ -4,6 +4,6 @@ type NavItem = {
 };
 
 export const navigationItems: Array<NavItem> = [
-  { href: "/dishes", displayName: "Gerichte" },
+  { href: "/recipies", displayName: "Rezepte" },
   { href: "/shopping-list", displayName: "Einkaufsliste" },
 ];

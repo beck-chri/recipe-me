@@ -28,7 +28,7 @@ export const theme: Theme = {
       },
     },
     fonts: {
-      body: { value: "Comic Sans MS, Comic Sans, cursive, serif" },
+      raleway: { value: "var(--next-font-raleway)" },
     },
   },
 };
