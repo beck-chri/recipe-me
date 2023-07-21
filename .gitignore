@@ -35,5 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Panda
-styled-system
-styled-system-static
+_styled-system
+_styled-system-static

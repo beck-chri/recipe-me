@@ -1,4 +1,4 @@
-import { css } from "../../../../styled-system/css";
+import { css } from "../../../../_styled-system/css";
 
 export const mainNavigation = css({
   backgroundColor: "highlight.primary",
@@ -9,9 +9,14 @@ export const mainNavigation = css({
   alignItems: "center",
 });
 
-export const LinkList = css({
+export const linkList = css({
   display: "flex",
   gap: "2rem",
+});
+
+export const navigationItem = css({
+  fontFamily: "raleway",
+  fontWeight: "400",
 });
 
 export const logo = css({
@@ -19,4 +24,10 @@ export const logo = css({
   fontWeight: "800",
   color: "text.onPrimary",
   fontSize: "xl",
+});
+
+export const logoNavWrapper = css({
+  display: "flex",
+  alignItems: "center",
+  gap: "3rem",
 });

@@ -25,8 +25,7 @@ export default defineConfig({
   strictTokens: false,
 
   // The output directory for your css system
-  outdir: "styled-system",
-  // todo umbenennen, damit es nach oben rutscht?
+  outdir: "_styled-system",
 
   // Decides which syntax to use: 'object-literal' | 'template-literal'
   syntax: "object-literal",

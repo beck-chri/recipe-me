@@ -1,4 +1,4 @@
-import { css } from "../../../../styled-system/css";
+import { css } from "../../../../_styled-system/css";
 
 export const button = css({
   backgroundColor: "highlight.primary",
